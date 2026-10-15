@@ -91,7 +91,7 @@ dialog{border:1px solid #41493a;border-radius:18px;background:#141714;color:#eee
           <p>I build websites and software tools that make everyday tasks simpler. My work covers responsive web interfaces, command-line applications, text processing and structured data workflows.</p>
           <p>I turn project requirements into working features, with clear documentation, input validation and automated tests. My focus is useful functionality and a straightforward user experience.</p>
           <div class="skill-list" aria-label="Tools I work with"><span>Go</span><span>Python</span><span>HTML &amp; CSS</span><span>Web development</span><span>Automated testing</span><span>Git &amp; GitHub</span><span>AI-assisted development</span></div><div class="stats">
-            <div><strong>03</strong><span>Featured projects</span></div>
+            <div><strong>04</strong><span>Featured projects</span></div>
             <div><strong>Go</strong><span>Core language</span></div>
             <div><strong>AI</strong><span>Native workflow</span></div>
           </div>
@@ -135,19 +135,19 @@ dialog{border:1px solid #41493a;border-radius:18px;background:#141714;color:#eee
               <h4>Case Work</h4>
               <div class="case-lines"></div>
               <div class="case-lines short"></div>
-              <div class="case-pill">IN PROGRESS</div>
+              <div class="case-pill">CLIENT · WORKER · MANAGEMENT</div>
             </div>
           </div>
           <div class="project-info">
             <div><span class="project-num">002</span><span class="tag">PRODUCT</span></div>
             <h3>Case Work</h3>
-            <p>A case study in development, focused on structured problem solving and documenting the decisions behind a build.</p><button class="project-link" type="button" data-project="casework">Project notes ↗</button><p hidden></p>
+            <p>A full-stack case management platform connecting clients and workers through proposals, project workspaces, messaging and progress tracking.</p><button class="project-link" type="button" data-project="casework">Explore CaseWork ↗</button><p hidden></p>
           </div>
         </article>
 
         <article class="project reveal">
           <div class="project-visual campus-visual">
-            <div class="terminal-preview"><div class="terminal-top"><span></span><span></span><span></span><small>campusflow / main.py</small></div><div class="terminal-body"><span class="terminal-note">ILLUSTRATIVE CLI PREVIEW</span><p class="prompt">$ python3 main.py</p><h4>CampusFlow</h4><p>01 &nbsp; Create ticket<br>04 &nbsp; Assign staff<br>06 &nbsp; Work queue<br>07 &nbsp; Reports</p><div class="terminal-row"><b>T001</b><span>Wi-Fi outage</span><em>CRITICAL</em></div><p class="terminal-pass">27 automated tests passed ✓</p></div></div>
+            <div class="terminal-preview"><div class="terminal-top"><span></span><span></span><span></span><small>campusflow / main.py</small></div><div class="terminal-body"><span class="terminal-note">ILLUSTRATIVE CLI PREVIEW</span><p class="prompt">$ python3 main.py</p><h4>CampusFlow</h4><p>01 &nbsp; Create ticket<br>04 &nbsp; Assign staff<br>06 &nbsp; Work queue<br>07 &nbsp; Reports</p><div class="terminal-row"><b>T001</b><span>Wi-Fi outage</span><em>CRITICAL</em></div><p class="terminal-pass">AUTOMATED TESTS ✓</p></div></div>
           </div>
           <div class="project-info">
             <div><span class="project-num">003</span><span class="tag">PYTHON</span><span class="tag">CLI</span></div>
@@ -156,6 +156,15 @@ dialog{border:1px solid #41493a;border-radius:18px;background:#141714;color:#eee
           </div>
         </article>
       </div>
+      <article class="project reveal" style="margin-top:2rem">
+        <div class="project-visual" style="min-height:260px;background:linear-gradient(125deg,#131b24,#343b4b 55%,#20281d);display:flex;align-items:center;justify-content:center;padding:2rem">
+          <div style="width:min(100%,620px);background:#10151b;border:1px solid #4b5761;border-radius:18px;overflow:hidden;box-shadow:0 24px 65px #0008">
+            <div style="padding:12px 18px;border-bottom:1px solid #39454b;color:#c8d5d5;font-size:12px;letter-spacing:.12em">● &nbsp; VELOCITY &nbsp; / &nbsp; AUTOMOTIVE CONCEPT</div>
+            <div style="padding:32px 24px"><div style="font-size:clamp(28px,5vw,54px);font-weight:800;letter-spacing:-.06em;color:#f4f6f4">DRIVE THE<br><span style="color:#b9ff66">EXTRAORDINARY.</span></div><p style="margin-top:12px;color:#aeb8bd;font-size:13px">Premium automotive landing page · illustrative preview</p></div>
+          </div>
+        </div>
+        <div class="project-info"><div><span class="project-num">004</span><span class="tag">WEB DEVELOPMENT</span><span class="tag">FRONTEND</span></div><h3>Velocity</h3><p>An automotive landing-page project focused on premium presentation, responsive design and polished interactions.</p><button class="project-link" type="button" data-project="velocity">Explore Velocity ↗</button></div>
+      </article>
     </section>
 
     <section class="capabilities section" id="skills"><div class="section-label">SERVICES AND CAPABILITIES</div><div class="capability-heading"><h2>Clear requirements.<br><em>Working solutions.</em></h2><p>Websites, software tools and documented workflows built around the problem you need to solve.</p></div><div class="capability-grid">
@@ -195,9 +204,10 @@ dialog{border:1px solid #41493a;border-radius:18px;background:#141714;color:#eee
   <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span>PROJECT NOTES</span><button type="button" id="close-dialog" aria-label="Close project details">Close ×</button></div><h2 id="dialog-title"></h2><p id="dialog-subtitle"></p><div id="dialog-content"></div></dialog><script>
 
 const projectData = {
+velocity:{title:'Velocity',subtitle:'Premium automotive landing-page concept.',intro:'A modern car-focused website exploring strong typography, responsive layouts and interactive presentation.',features:['Automotive landing-page layout','Responsive frontend design','Premium visual direction'],note:'Illustrative portfolio preview. Public demo and verified source link are not available yet.'},
 proof:{title:'Proof',subtitle:'A Go tool for inspecting website evidence.',intro:'Proof examines URL and website signals before a person decides whether to trust a link. It reports what it observes; it does not guarantee that a website is safe.',features:['URL and network-address validation','HTTP responses and redirect inspection','TLS checks and suspicious-content signals','Evidence reports with cautious summaries'],note:'Built with Go’s standard library. The visual on this page illustrates the report concept; this portfolio does not run live URL checks.'},
-casework:{title:'Case Work',subtitle:'Case study in development.',intro:'A space for documenting a project from the original problem through implementation and lessons learned.',features:['Problem definition','Engineering decisions','Implementation notes and reflection'],note:'The full case study is being prepared. Detailed results will be added when documented.'},
-campusflow:{title:'CampusFlow',subtitle:'Python command-line campus helpdesk.',intro:'A group project that turns campus support requests into a clear ticket workflow, from reporting a problem to resolving it.',features:['Ticket creation and rule-based priority calculation','Staff assignment, status transitions and reopening','An open-ticket queue sorted by priority and ID','Reports and validated JSON storage','27 automated tests passed on the merged main branch'],note:'Built with Python’s standard library. Includes protection against invalid input, corrupt saved data and failed writes.',url:'https://github.com/gookonkwo/campusflow',label:'Explore the repository ↗'},
+casework:{title:'CaseWork',subtitle:'Full-stack case management platform · Go, HTML, CSS and JavaScript.',intro:'A client-and-worker platform with role-specific dashboards, case creation, proposals, messaging, notifications, work submission and review workflows.',features:['Client, worker and management dashboards','Case creation and proposal management','Messages, notifications and progress updates','Work submission, change requests and ratings','Responsive interface and Go backend'],note:'Repository is private and the application is not yet publicly hosted. The project preview is illustrative; production deployment and final acceptance checks remain pending.'},
+campusflow:{title:'CampusFlow',subtitle:'Python command-line campus helpdesk.',intro:'A group project that turns campus support requests into a clear ticket workflow, from reporting a problem to resolving it.',features:['Ticket creation and rule-based priority calculation','Staff assignment, status transitions and reopening','An open-ticket queue sorted by priority and ID','Reports and validated JSON storage','Automated tests and CI on the merged main branch'],note:'Built with Python’s standard library. Includes protection against invalid input, corrupt saved data and failed writes.',url:'https://github.com/gookonkwo/campusflow',label:'Explore the repository ↗'},
 ascii:{title:'ASCII Art',subtitle:'Text rendering with Go.',intro:'A command-line project for turning text into ASCII banners.',features:['Reading character banners from files','Handling multiple lines of input','String handling, rendering loops and file error handling'],note:'Supports banner-based text rendering. Source and a detailed walkthrough will be added when ready.'},
 reloaded:{title:'Go Reloaded',subtitle:'A Go text-processing project.',intro:'A practical project for transforming text using commands and formatting rules.',features:['Hexadecimal and binary conversions','Uppercase, lowercase and capitalization commands','Punctuation, quote and article formatting'],note:'Focus areas include string processing, validation and edge cases.'}
 };
